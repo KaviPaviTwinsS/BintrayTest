@@ -3,15 +3,9 @@
 buildscript {
     
     repositories {
-//        google()
-//        jcenter()
-        maven {
-            url  "https://dofnpt.bintray.com/CustomWidget"
-        }
         google()
-//        jcenter()
-        jcenter{ url "http://jcenter.bintray.com/" }
-        maven{url "https://maven.google.com"}
+        jcenter()
+
 
     }
     dependencies {
@@ -27,8 +21,12 @@ buildscript {
 
 allprojects {
     repositories {
+//        jcenter()
+        maven {
+            url  "https://dofnpt.bintray.com/CustomWidget"
+        }
         google()
-        jcenter()
+
     }
 }
 
